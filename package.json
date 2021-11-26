@@ -11,7 +11,7 @@
     "build": "tsc",
     "watch": "tsc -w"
   },
-  "author": "",
+  "author": "anurag.lingam@outlook.com",
   "license": "ISC",
   "dependencies": {
     "@sapphire/decorators": "^3.1.4",
@@ -27,5 +27,8 @@
     "esm": "^3.2.25",
     "tslint": "^5.12.1",
     "typescript": "^4.1.3"
+  },
+  "engines": {
+    "node": "16.13.0"
   }
 }
