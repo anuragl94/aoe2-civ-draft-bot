@@ -1,0 +1,24 @@
+{
+  "include": [
+    "./src/"
+  ],
+  "extends": "@sapphire/ts-config",
+  "compilerOptions": {
+    "baseUrl": "src",
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "target": "es6",
+    "experimentalDecorators": true,
+    "moduleResolution": "node",
+    "sourceMap": true,
+		"rootDir": "src",
+    "outDir": "dist",
+    "strict": true,
+    "skipLibCheck": true,
+		"tsBuildInfoFile": "dist/.tsbuildinfo",
+    "forceConsistentCasingInFileNames": true
+  },
+  "lib": [
+    "es2015"
+  ]
+}
