@@ -187,14 +187,3 @@ function civListToNames(team: number[]) {
   }
   return team.map(i => CIVILIZATIONS[i])
 }
-
-function civListsToNames(teams: number[][] | null) {
-  if (!teams) {
-    return null;
-  }
-  const [teamA, teamB] = teams;
-  return [
-    teamA.map(i => CIVILIZATIONS[i]),
-    teamB.map(i => CIVILIZATIONS[i])
-  ];
-}
