@@ -5,7 +5,7 @@
   "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "pm2 start dist/index.js",
+    "start": "npm run build && pm2 start dist/index.js",
     "flush": "pm2 stop dist/index.js",
     "dev": "node -r dotenv/config dist/index.js",
     "build": "tsc",
