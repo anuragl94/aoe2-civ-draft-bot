@@ -3,7 +3,7 @@ import { ApplyOptions } from '@sapphire/decorators';
 import { MessageEmbed } from 'discord.js';
 import type { Message } from 'discord.js';
 
-import { CIVILIZATIONS, FLANKS, POCKETS } from './CivDraft';
+import { CIVILIZATIONS, FLANKS, POCKETS } from '../../util/CivDrafting';
 
 @ApplyOptions<CommandOptions>({
   name: 'civpool',
