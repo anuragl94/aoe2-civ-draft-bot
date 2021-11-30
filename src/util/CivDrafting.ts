@@ -68,9 +68,15 @@ export const CIVILIZATIONS = [
   "Vikings"
 ]
 
-export const POCKETS = [1, 3, 4, 5, 6, 7, 8, 9, 11, 12, 13, 15, 18, 20, 21, 23, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34];
+export const ONLY_FLANKS = [0, 2, 10, 14, 16, 17, 19, 22, 24, 35, 36];
 
-export const FLANKS = [0, 2, 6, 7, 8, 10, 12, 13, 14, 15, 16, 17, 18, 19, 21, 22, 23, 24, 25, 27, 28, 29, 35, 36];
+export const ONLY_POCKETS = [1, 3, 4, 5, 9, 11, 20, 26, 30, 31, 32, 33, 34];
+
+export const HYBRIDS = [6, 7, 8, 12, 13, 15, 18, 21, 23, 25, 27, 28, 29];
+
+export const POCKETS = [...ONLY_POCKETS, ...HYBRIDS];
+
+export const FLANKS = [...ONLY_FLANKS, ...HYBRIDS];
 
 export function getRandomCivList(civCount = 1, unique = true, useFullList = true, chooseFlanks = false, exclusionList: number[] = []) {
   const pool = useFullList ? [...FLANKS, ...POCKETS] : (chooseFlanks ? [...FLANKS] : [...POCKETS]);
