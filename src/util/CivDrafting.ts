@@ -65,14 +65,16 @@ export const CIVILIZATIONS = [
   "Teutons",
   "Turks",
   "Vietnamese",
-  "Vikings"
+  "Vikings",
+  "Poles",
+  "Bohemians"
 ]
 
-export const ONLY_FLANKS = [0, 2, 10, 14, 16, 17, 19, 22, 24, 35, 36];
+export const ONLY_FLANKS = [0, 2, 7, 10, 14, 16, 17, 19, 22, 24, 25, 36, 38];
 
-export const ONLY_POCKETS = [1, 3, 4, 5, 9, 11, 20, 26, 30, 31, 32, 33, 34];
+export const ONLY_POCKETS = [1, 3, 4, 5, 9, 11, 15, 20, 26, 30, 31, 33, 34];
 
-export const HYBRIDS = [6, 7, 8, 12, 13, 15, 18, 21, 23, 25, 27, 28, 29];
+export const HYBRIDS = [6, 8, 12, 13, 18, 21, 23, 27, 28, 29, 32, 35, 37];
 
 export const POCKETS = [...ONLY_POCKETS, ...HYBRIDS];
 
