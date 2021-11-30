@@ -50,8 +50,21 @@ const main = async () => {
           });
         } else {
           message.reply({
-            content: 'Map doesn\'t specify random civs. Players may choose what they want.',
-            allowedMentions: { repliedUser: false }
+            content: 'Map doesn\'t specify random civs. Players may choose what they want. Or... captains may try Captains mode.',
+            allowedMentions: { repliedUser: false },
+            components: [
+              {
+                  type: 1,
+                  components: [
+                    {
+                        type: 2,
+                        label: "Captains mode",
+                        style: 5,
+                        url: "https://aoe2cm.net/preset/WXtOv"
+                    }
+                  ]
+              }
+            ]
           });
         }
       } catch (err) {
